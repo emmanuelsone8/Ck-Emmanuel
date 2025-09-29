@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Emmanuel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!--Fond dégradé animé-->
+  <div class="animated-bg"></div>
+
+  <!--Fond bulles animées-->
+  <div class="bubbles hidden">
+    <span style="--i:11;"></span>
+    <span style="--i:15;"></span>
+    <span style="--i:18;"></span>
+    <span style="--i:25;"></span>
+    <span style="--i:12;"></span>
+    <span style="--i:14;"></span>
+    <span style="--i:16;"></span>
+    <span style="--i:19;"></span>
+    <span style="--i:20;"></span>
+    <span style="--i:22;"></span>
+  </div>
+
+  <!--Fond particules -->
+  <canvas id="particles" class="hidden"></canvas>
+
+  <div class="container">
+    <!-- Partie gauche (image)-->
+    <div class="left">
+      <img src="2-removebg-preview.png" alt="Photo de Emmanuel.k">
+    </div>
+
+    <!-- Partie droite (Nom...)-->
+    <div class="right">
+      <h2 id="nom">Emmanuel kouassi</h2>
+      <p id="role"></p>
+      
+      <h1>Portfolio</h1>
+
+      <div class="menu">
+        <p><span>Page 03 - 10</span> : Etudiant en BTP</p>
+        <p><span>Page 11 - 14</span> : Etudiant en IDA</p>
+        <p><span>Page 15 - 18</span> : Photographie</p>
+        <p><span>Page 19 - 21</span> : Vidéo</p>
+      </div>
+
+      <div class="controls">
+        <button id="themeToggle">Changer de thème </button>
+        
+        <!--Sélecteur de fond -->
+        <label for="backgroundSelect"> Fond :</label>
+        <select id="backgroundSelect">
+          <option value="gradient">Dégradé fluide </option>
+          <option value="bubbles">Bulles </option>
+          <option value="particles">Particules </option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
